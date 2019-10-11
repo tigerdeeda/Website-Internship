@@ -1,0 +1,14 @@
+2018-07-25T14:25:04+00:00 CRITICAL Uncaught Error: Call to a member function get_type() on boolean in C:\xampp\htdocs\websiteoffice\wp-content\plugins\yith-woocommerce-auctions-premium\includes\class.yith-wcact-auction-admin-premium.php:831
+Stack trace:
+#0 C:\xampp\htdocs\websiteoffice\wp-includes\class-wp-hook.php(288): YITH_Auction_Admin_Premium->admin_list_bid('product')
+#1 C:\xampp\htdocs\websiteoffice\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\websiteoffice\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\websiteoffice\wp-admin\edit-form-advanced.php(334): do_action('add_meta_boxes', 'product', Object(WP_Post))
+#4 C:\xampp\htdocs\websiteoffice\wp-admin\post.php(174): include('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-07-25T16:24:03+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-07-25T16:26:04+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+

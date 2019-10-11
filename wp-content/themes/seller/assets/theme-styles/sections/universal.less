@@ -1,0 +1,29 @@
+/*
+ ------------------- Pre Requisite/Reset ----------------
+*/
+.container {
+  margin: auto;
+}
+a:hover {
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+  .body-font;
+  color: @accent;
+}
+#content {
+  background: @default-background;
+  clear: both;
+  z-index: 888;
+}
+a {
+  color: @accent;
+  transition: 0.4s all ease;
+  &:visited {
+    color: @accent-hover;
+  }
+  &:hover {
+    color: @accent-hover;
+  }
+}

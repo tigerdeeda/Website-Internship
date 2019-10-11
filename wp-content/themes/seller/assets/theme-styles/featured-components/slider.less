@@ -1,0 +1,129 @@
+/* -------------------- Slider -------------------*/
+#slider-wrapper {
+  clear: both;
+  position: relative;
+  margin-bottom: 50px;
+  margin-top: -20px;
+  z-index: 9999;
+  a.slideurl {
+    display: block;
+    width: inherit;
+    height: inherit;
+    pointer-events: all;
+  }
+  .slider-caption {
+    position: absolute;
+    pointer-events: none;
+    left: 0px;
+    right: 0px;
+    bottom: 45px;
+    padding: 7px 17px;
+    padding-left: 20px;
+    text-align: left;
+    color: white;
+    .slider-caption-title {
+      .body-font;
+      font-size: 34px;
+      text-shadow: 2px 2px 0px @content, 0 0 7px lighten(@content,50%);
+      background: fade(@accent,20%);
+      padding:10px 15px;
+      padding-right: 30px;
+      display: inline-block;
+      clear: both;
+      float: left;
+    }
+    .slider-caption-desc {
+      .body-font;
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 1px 1px 4px @content;
+      background: fade(black,20%);
+      padding: 8px 10px;
+      display: inline-block;
+      clear: left;
+      float: left;
+      margin-bottom: 5px;
+    }
+    @media screen {
+      @media (max-width: 767px) {
+        box-shadow: none;
+        background: none;
+        padding: 3px 8px;
+        .slider-caption-title { font-size: 14px; padding: 5px}
+        .slider-caption-desc { font-size: 11px; margin-bottom: 0; padding: 3px }
+      }
+    }
+  }
+  a { color: white }
+  @media screen {
+    @media (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+  }
+}
+.bx-wrapper {
+  box-shadow: none;
+  ul {
+    margin-left: 0px;
+  }
+  img {
+    min-width: 100%;
+  }
+  .bx-viewport {
+    box-shadow: none;
+    border: none;
+    left:0px;
+  }
+  a.bx-prev {
+    background: url(../../images/arrows.png) 0 0;
+    height: 46px;
+    width: 24px;
+    opacity: .8;
+    transition-property: opacity;
+    transition-delay: .5s;
+    transition-timing-function: ease;
+    &:hover {
+      background-position-y: 46px;
+      opacity: 1;
+    }
+  }
+  a.bx-next {
+    margin-right: 12px;
+    background: url(../../images/arrows.png) 24px 0;
+    height: 46px;
+    width: 24px;
+    opacity: 0.8;
+    transition-property: opacity;
+    transition-delay: .5s;
+    transition-timing-function: ease;
+    &:hover {
+      background-position: 24px 46px;
+      opacity: 1;
+    }
+  }
+  @media screen {
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+      a.bx-next, a.bx-prev {
+        display: none;
+      }
+    }
+  }
+  .bx-pager.bx-default-pager a {
+    width: 20px;
+    border-radius: 0px;
+    height: 8px;
+    background: fade(@accent,60%);
+    text-indent: 9999px;
+  }
+  .bx-pager-item .active {
+    background: fade(saturate(@accent,40%),90%) !important;
+  }
+  .bx-pager {
+    text-align: right;
+    position: absolute;
+    top: 1px;
+    right: 20px;
+    height: 15px;
+  }
+}

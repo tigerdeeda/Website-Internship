@@ -1,0 +1,167 @@
+/* -------------- footer widget area -------- */
+#footer-sidebar {
+  padding-top: 20px;
+  background: @footer;
+  margin-top: 30px;
+  padding-bottom: 50px;
+  color: @foooter-color;
+  font-weight: lighter;
+  a {
+    color: @footer-link;
+    &:hover {
+      color: white;
+    }
+  }
+  h3.widget-title {
+    font-weight: bold;
+    .site-title-font;
+    font-size: 16px;
+    color: lighten(@footer-link,30%);
+    margin-bottom: 20px;
+  }
+  .widget_recent_comments {
+    ul {
+      margin-left: 5px;
+      li:last-child {
+        border-bottom: none;
+      }
+    }
+    li {
+      list-style: none;
+      padding-bottom: 6px;
+      padding-top: 6px;
+      border-bottom: none;
+      &:last-child {
+        border-bottom: none !important;
+      }
+      &:before {
+        content: "\f075" !important;
+        font-family: "FontAwesome";
+        margin-right: 6px;
+      }
+    }
+  }
+  .widget {
+    & > ul {
+      margin-left: 0px;
+      li {
+        list-style: none;
+        padding-bottom: 6px;
+        padding-top: 6px;
+        //border-bottom: solid darken(@foooter-color,25%) 1px;
+        &:before {
+          content: "\f105";
+          font-family: "FontAwesome";
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+  .widget_nav_menu {
+    ul.menu {
+      margin-left: 0px;
+      & > li {
+        list-style: none;
+        padding-bottom: 6px;
+        padding-top: 6px;
+        border-bottom: solid darken(@foooter-color,25%) 1px;
+        &:before {
+          content: "\f054";
+          font-family: "FontAwesome";
+          margin-right: 6px;
+        }
+        ul {
+          margin-left: 40px;
+          ul {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+  .widget_recent_entries {
+    ul {
+      margin-left: 5px;
+    }
+    li {
+      list-style: none;
+      padding-bottom: 6px;
+      padding-top: 6px;
+      //border-bottom: solid darken(@foooter-color,25%) 1px;
+      &:before {
+        content: "\f0f6" !important;
+        font-family: "FontAwesome";
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+#secondary, #footer-sidebar {
+  .woocommerce ul.product_list_widget,.woocommerce-page ul.product_list_widget {
+    margin-left: 4px;
+    li:before {
+      content: none !important;
+    }
+  }
+
+  span.amount {
+    font-weight: bold;
+    color: darken(@content,10%);
+  }
+  del {
+    font-size: 10px;
+    color: lighten(@content,5%);
+  }
+}
+
+.woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img, .woocommerce-page ul.cart_list li img, .woocommerce-page ul.product_list_widget li img {
+  float: left;
+  margin-right: 14px;
+  width: 48px;
+  height: auto;
+}
+/* --------------- colophon ---------------- */
+#colophon {
+  text-align: center;
+  padding: 15px;
+  background: darken(@footer,10%);
+  padding-bottom: 4px;
+  color: @foooter-color;
+  .site-info {
+    text-align: left;
+  }
+  a {
+    color: @footer-link;
+    font-weight: lighter;
+    &:hover {
+      color: #ddd;
+    }
+  }
+  .footer-menu {
+    ul {
+      margin-left: 0px;
+    }
+    text-align: right;
+    ul ul {
+      display: none;
+    }
+    ul {
+      li {
+        display: inline;
+        padding-right: 10px;
+      }
+    }
+  }
+  @media screen {
+    @media (max-width: 991px) {
+      .site-info {
+        text-align: center;
+        margin: 20px;
+      }
+      .footer-menu {
+        text-align: center;
+      }
+    }
+  }
+}

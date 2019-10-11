@@ -1,0 +1,23 @@
+
+---Upload files---
+Content file was not uploaded. Error: 
+
+---Upload files---
+Redux file was not uploaded. Error: ไฟล์ว่างเปล่า  กรุณาอัปโหลดไฟล์ใหม่ที่มีข้อมูล  ความผิดพลาดนี้อาจเกิดจากการไม่เปิดใช้การอัปโหลดในไฟล์ php.ini หรือ โดย 
+
+---Upload files---
+The import files were successfully uploaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://localhost/websiteoffice
+Data file = not defined!
+Widget file = C:\xampp\htdocs\websiteoffice/wp-content/uploads/2018/07/excellent-demo-importer-1.zip
+Customizer file = C:\xampp\htdocs\websiteoffice/wp-content/uploads/2018/07/excellent-demo-importer-2.zip
+Redux files:
+not defined!
+
+---Importing widgets---
+Error: Widget import data could not be read. Please try a different file.
+
+---Importing customizer settings---
+Error: The customizer import file is not in a correct format. Please make sure to use the correct customizer import file.

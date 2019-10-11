@@ -1,0 +1,50 @@
+/* --------------- comments -------------- */
+#respond {
+  input[type=text] {
+    max-width: 450px;
+  }
+}
+
+#comments {
+  margin-top: 55px;
+  h2.comments-title {
+    font-size: x-large;
+    .site-title-font;
+  }
+  ol.comment-list {
+    list-style: none;
+    margin-left: 0px;
+  }
+  li.comment {
+    border: solid 1px #eee;
+    padding: 10px;
+    margin-top: 15px;
+    list-style: none;
+    background: #f9f9f9;
+    .comment-content {
+      color: darken(@content,10%);
+    }
+  }
+  li.trackback {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: solid 1px #eee;
+    font-weight: bold;
+    a { font-weight: normal; }
+  }
+  .vcard img {
+    border: solid 4px lighten(grey,40%);
+    border-radius: 5px;
+    margin: 0 10px 10px 0;
+  }
+  .comment-metadata {
+    font-weight: bold;
+  }
+}
+@media screen and (max-width:480px) {
+  li.comment {
+    margin-left: -5%;
+  }
+}

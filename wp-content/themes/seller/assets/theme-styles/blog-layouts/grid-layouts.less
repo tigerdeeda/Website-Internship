@@ -1,0 +1,103 @@
+#primary{
+  article.grid3,article.grid2 {
+    padding: 7px;
+    -webkit-backface-visibility: hidden;
+    .featured-thumb {
+      padding: 0;
+      overflow: hidden;
+      .transition(.5s all ease);
+      img {
+        -webkit-backface-visibility: hidden;
+        .transition(.6s all ease);
+        z-index: 0;
+        width: 100%;
+      }
+      @media screen and (min-width: 767px) {
+        &:hover {
+          img {
+            transform: scale(1.1);
+            -webkit-filter: brightness(60%);
+          }
+        }
+      }
+      @media screen {
+        @media (max-width: 991px) {
+          margin: 10px;
+        }
+      }
+    }
+    .out-thumb {
+      padding: 10px 0px;
+      @media screen and (max-width: 991px) {
+        padding: 10px 10px;
+      }
+      h2.entry-title {
+        margin: 0 0 10px 0px;
+        font-size: 16px;
+        a {
+          color: @content;
+          font-weight: bold;
+          @media screen and (min-width: 767px) {
+            &:hover {
+              color: @accent;
+            }
+          }
+        }
+      }
+      .entry-excerpt {
+        color: lighten(@content,16%);
+        font-size: 13px;
+        line-height: 1.6em;
+      }
+      .readmore {
+        .site-title-font;
+        font-size: 13px;
+        margin-top: 10px;
+        @media screen and (min-width: 767px){
+        &:hover {
+          a{
+            color: darken(@content,20%);
+          }
+        }
+        }
+      }
+    }
+    @media screen {
+      @media (max-width: 991px) and (min-width: 768px) {
+        &:nth-child(odd) {
+          clear: both;
+        }
+      }
+      @media (max-width: 767px) {
+        width: 65%;
+        margin: 10px auto;
+      }
+      @media (max-width: 450px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .grid2 {
+    padding: 0;
+    border-bottom: none;
+    .out-thumb {
+      padding: 12px 0;
+
+    }
+    @media screen and (max-width: 768px) {
+      padding-right: 0px;
+    }
+
+    @media screen and (min-width: 768px) {
+      &:nth-of-type(even) {
+        padding-left: 10px;
+      }
+      &:nth-of-type(odd) {
+        padding-right: 10px;
+        clear: left;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,30 @@
+2018-07-11T06:22:33+00:00 CRITICAL Uncaught Error: Call to a member function setTime() on null in C:\xampp\htdocs\websiteoffice\wp-content\plugins\yith-woocommerce-auctions-premium\templates\admin\product-tabs\auction-tab.php:19
+Stack trace:
+#0 C:\xampp\htdocs\websiteoffice\wp-content\plugins\yith-woocommerce-auctions-premium\includes\class.yith-wcact-auction-admin.php(350): include()
+#1 C:\xampp\htdocs\websiteoffice\wp-includes\class-wp-hook.php(286): YITH_Auction_Admin->add_product_data_panels('')
+#2 C:\xampp\htdocs\websiteoffice\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\websiteoffice\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\websiteoffice\wp-content\plugins\woocommerce\includes\admin\meta-boxes\views\html-product-data-panel.php(46): do_action('woocommerce_pro...')
+#5 C:\xampp\htdocs\websiteoffice\wp-content\plugins\woocommerce\includes\admin\meta-boxes\class-wc-meta-box-product-data.php(35): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\websiteoffice\wp-admi
+
+2018-07-11T06:24:12+00:00 CRITICAL Uncaught Error: Call to a member function setTime() on null in C:\xampp\htdocs\websiteoffice\wp-content\plugins\yith-woocommerce-auctions-premium\templates\admin\product-tabs\auction-tab.php:19
+Stack trace:
+#0 C:\xampp\htdocs\websiteoffice\wp-content\plugins\yith-woocommerce-auctions-premium\includes\class.yith-wcact-auction-admin.php(350): include()
+#1 C:\xampp\htdocs\websiteoffice\wp-includes\class-wp-hook.php(286): YITH_Auction_Admin->add_product_data_panels('')
+#2 C:\xampp\htdocs\websiteoffice\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\websiteoffice\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\websiteoffice\wp-content\plugins\woocommerce\includes\admin\meta-boxes\views\html-product-data-panel.php(46): do_action('woocommerce_pro...')
+#5 C:\xampp\htdocs\websiteoffice\wp-content\plugins\woocommerce\includes\admin\meta-boxes\class-wc-meta-box-product-data.php(35): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\websiteoffice\wp-admi
+
+2018-07-11T06:41:27+00:00 CRITICAL Uncaught Error: Call to a member function setTime() on null in C:\xampp\htdocs\websiteoffice\wp-content\plugins\yith-woocommerce-auctions-premium\templates\admin\product-tabs\auction-tab.php:19
+Stack trace:
+#0 C:\xampp\htdocs\websiteoffice\wp-content\plugins\yith-woocommerce-auctions-premium\includes\class.yith-wcact-auction-admin.php(350): include()
+#1 C:\xampp\htdocs\websiteoffice\wp-includes\class-wp-hook.php(286): YITH_Auction_Admin->add_product_data_panels('')
+#2 C:\xampp\htdocs\websiteoffice\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\websiteoffice\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\websiteoffice\wp-content\plugins\woocommerce\includes\admin\meta-boxes\views\html-product-data-panel.php(46): do_action('woocommerce_pro...')
+#5 C:\xampp\htdocs\websiteoffice\wp-content\plugins\woocommerce\includes\admin\meta-boxes\class-wc-meta-box-product-data.php(35): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\websiteoffice\wp-admi
+

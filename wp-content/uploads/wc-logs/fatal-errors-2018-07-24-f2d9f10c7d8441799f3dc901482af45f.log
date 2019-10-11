@@ -1,0 +1,29 @@
+2018-07-24T09:29:07+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-07-24T15:05:28+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-07-24T15:07:30+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-07-24T15:09:29+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-07-24T15:23:43+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-07-24T15:24:00+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-07-24T16:48:37+00:00 CRITICAL Uncaught Error: Call to undefined function wc_date() in C:\xampp\htdocs\websiteoffice\wp-content\plugins\yith-woocommerce-auctions-premium\templates\frontend\auction-timeleft.php:22
+Stack trace:
+#0 C:\xampp\htdocs\websiteoffice\wp-content\plugins\woocommerce\includes\wc-core-functions.php(210): include()
+#1 C:\xampp\htdocs\websiteoffice\wp-content\plugins\yith-woocommerce-auctions-premium\includes\class.yith-wcact-auction-frontend-premium.php(433): wc_get_template('auction-timelef...', Array, '', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\websiteoffice\wp-includes\class-wp-hook.php(286): YITH_Auction_Frontend_Premium->add_auction_timeleft(Object(WC_Product_Auction_Premium))
+#3 C:\xampp\htdocs\websiteoffice\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\websiteoffice\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\websiteoffice\wp-content\plugins\yith-woocommerce-auctions-premium\templates\woocommerce\single-product\add-to-cart\auction.php(55)
+
+2018-07-24T22:03:26+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-07-24T22:16:16+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-07-24T22:16:20+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-07-24T22:17:33+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+

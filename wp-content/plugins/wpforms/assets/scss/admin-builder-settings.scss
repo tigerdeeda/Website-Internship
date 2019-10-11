@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Admin Form Builder - Settings panel
+   ========================================================================== */
+
+@import 'variables';
+@import 'admin/confirm';
+
+#wpforms-panel-settings {
+	.wpforms-panel-sidebar {
+	}
+
+	.wpforms-panel-content {
+
+		.wpforms-notification {
+			border: 1px solid #d3d3d3;
+			margin: 0 0 20px 0;
+
+			.wpforms-panel-field {
+				padding: 0 20px;
+			}
+		}
+
+		.wpforms-notification-header {
+			background-color: #f1f1f1;
+			padding: 10px 20px;
+			font-size: 16px;
+			margin: 0;
+
+			.wpforms-notification-name-edit {
+				display: none;
+				margin-top: -6px;
+				margin-bottom: -6px;
+				width: 410px;
+
+				&.active {
+					display: inline-block;
+				}
+
+				input {
+					width: 100%;
+				}
+			}
+
+			.wpforms-notification-actions {
+				display: inline-block;
+				float: right;
+
+				button {
+					-webkit-appearance: none;
+					background-color: transparent;
+					border: none;
+					color: inherit;
+					cursor: pointer;
+					font-size: 16px;
+					line-height: 1;
+
+					&.wpforms-notification-edit {}
+
+					&.wpforms-notification-delete {
+						color: #d22222;
+						padding-right: 0;
+					}
+				}
+			}
+		}
+
+		.wpforms-notification-content {
+			margin-top: 20px;
+		}
+	}
+}
+

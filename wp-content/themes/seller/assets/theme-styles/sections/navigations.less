@@ -1,0 +1,104 @@
+/*------------------ Navigation -------------- */
+#top-nav {
+  #site-navigation {
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 13px;
+    padding-left: 0px;
+    -webkit-backface-visibility: hidden;
+    margin-top: 0px;
+    a {
+      color: @content;
+      padding: 38px 15px;
+      padding-bottom: 58px;
+      .body-font;
+      &:hover {
+        color: @accent;
+      }
+    }
+    ul {
+      margin-left: 0px;
+      z-index: 99999;
+      float:right;
+      li{
+        float: left;
+        display: inline-block;
+        &:hover > ul {
+          opacity: 1;
+          z-index: 999999;
+        }
+      }
+      & > li:last-child a {
+        padding-right: 0px;
+      }
+
+      ul {
+        background: @default-background;
+        border-top: solid 2px @accent;
+        box-shadow: none;
+        top:8.8em;
+        z-index: 99999;
+        a {
+          padding: 8px 5px;
+          font-size: 12px;
+          text-align: left;
+          padding-left: 10px;
+          color: lighten(@content, 40%);
+          font-weight: lighter;
+          border-bottom: solid 1px #ddd;
+          &:hover {
+            background: darken(@default-background, 3%);
+          }
+        }
+        ul {
+          top: -0.1em;
+        }
+      }
+      @media screen {
+        @media (max-width: 1199px) {
+          float: none;
+          text-align: center;
+          margin-top: 25px;
+          margin-bottom: 25px;
+          li {
+            float: none;
+            a {
+              padding: 20px 10px;
+            }
+          }
+          ul {
+            top:2.4em;
+            a {
+              padding: 8px 5px;
+            }
+            ul {
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen {
+    @media (max-width: 600px) {
+      h1.menu-toggle {
+        //display: block;
+        .site-title-font;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+      #site-navigation {
+        ul li a {
+          padding: 5px 10px;
+        }
+        ul ul { display: none !important; }
+        ul { margin-left: 16%;}
+        ul li {
+          display: block;
+          width: 80%;
+        }
+      }
+    }
+  }
+}

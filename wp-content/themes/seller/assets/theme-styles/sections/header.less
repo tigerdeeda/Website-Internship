@@ -1,0 +1,131 @@
+/* ----------------- Top Bar --------------------------- */
+#top-bar {
+  border-bottom: solid 1px #eee;
+  margin-bottom: 10px;
+  background: lighten(@accent,30%);
+  //------------Social Icons -------------------- //
+  #social-icons {
+    padding-top: 4px;
+    float: right;
+    margin-top:5px;
+    overflow: hidden;
+    padding-bottom: 7px;
+    -webkit-backface-visibility: hidden;
+    text-align: right;
+
+    a {
+      background: 0 0;
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 18px;
+      color: darken(@default-background,5%);
+      transition: 0.4s all ease;
+      &:hover {
+        opacity: 0.95;
+        color: @accent;
+      }
+    }
+  }
+
+  //-------------.top-left----------------//
+  .top-left {
+    padding: 10px;
+    display: inline-block;
+    color: darken(@default-background,5%);
+    font-weight: 500;
+    a {
+      color: darken(@default-background,5%);
+    }
+  }
+
+  //----------------- Top Search Form ---------- //
+  .search-form-top {
+    float: left;
+    padding-top: 7px;
+    margin-right: 30px;
+    input[type=text] {
+      border-radius: 0px;
+      border-color: lighten(@content,10%);
+      padding-left: 10px;
+      outline: none;
+      width: 240px;
+      .transition(0.4s ease);
+    }
+    &:after {
+      content: url(../../images/search.png);
+      position: relative;
+      top: 2px;
+      right: 30px;
+    }
+    ::-webkit-input-placeholder {
+      color: lighten(@accent,7%);
+      font-size: 12px;
+      padding-top: 2px;
+      font-weight: lighter;
+    }
+    ::-moz-input-placeholder {
+      color: lighten(@accent,7%);
+      font-size: 12px;
+      padding-top: 2px;
+      font-weight: lighter;
+    }
+  }
+  @media screen {
+    @media (max-width: 991px) {
+      #social-icons, .search-form-top {
+        float: none;
+        text-align: center;
+
+      }
+      #search-icon,#social-icons {
+        a {
+          float: none;
+          text-align: center;
+        }
+      }
+      .search-form-top {
+        margin-right: 0px;
+      }
+      .container .col-md-6 {
+        text-align: center;
+      }
+    }
+  }
+}
+#masthead {
+  text-align: left;
+  padding: 0px;
+  border: none;
+  position: relative;
+  border-bottom: solid 1px #eee;
+  margin-bottom: 20px;
+  .site-title {
+    .site-title-font;
+    position: relative;
+    padding-top: 8px;
+    a {
+      color: @accent;
+      font-size: 32px;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform-style: flat;
+      display: inline-block;
+    }
+    margin-top: 7px;
+    margin-bottom: 5px;
+  }
+  .site-description {
+    margin-top: 10px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: lighter;
+    color: @content;
+  }
+  #site-logo img {
+    max-height: 110px;
+  }
+  @media screen {
+    @media (max-width: 1199px) {
+      text-align: center;
+    }
+  }
+}
